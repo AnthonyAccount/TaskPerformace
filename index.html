@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task Performance</title>
+	<script>
+		function confirmAge() {
+			var age = document.getElementById("age").value;
+			if (age >= 25) {
+				alert("You are 25 years old and up!");
+			} else {
+				alert("You are not 25 years old yet.");
+			}
+		}
+	</script>
+    <script>
+		function confirmNumber() {
+			var number = document.getElementById("number").value;
+			if (number < 100) {
+				alert("You entered a number less than 100.");
+			} else {
+				alert("You entered a number greater than or equal to 100.");
+			}
+		}
+	</script>
+    <script>
+        function loop1() {
+		
+	    	for (var i = 0; i <= 30; i++) {
+          document.write(i + "<br>"); 
+}
+        }
+		
+	</script>
+    <script>
+        function loop2() {
+		
+	    	for (var i = 0; i <= 40; i += 2) {
+          document.write(i + "<br>"); 
+}
+        }
+		
+	</script>
+    <script>
+        function loop3() {
+		
+            for (var i = 40; i >= 10; i--) {
+  if (i % 3 === 0) {
+   
+          document.write(i + "<br>"); 
+}
+        }
+    }
+		
+	</script>
+</head>
+
+<body>
+    <p>1. Construct if and if...else statements that meet the following</p>
+    <p>a. Display a dialog box confirming a user is 25 years old and up</p>
+	<label for="age">Enter your age:</label>
+	<input type="text" id="age">
+	<button onclick="confirmAge()">Confirm</button>
+<br>
+<br>
+<p>b. Display a dialog box confirming a user entered a number less than 100</p>
+<label for="number">Enter a number:</label>
+	<input type="text" id="number">
+	<button onclick="confirmNumber()">Confirm</button>
+    <br>
+    <br>
+    <p>2. Construct for loops that meet the following tasks</p>
+    <p>a. Print the numbers 0-30, one number per line</p>
+    <button onclick="loop1()">display</button>
+    <p>b. Print only the even values from 0-40, one number per line</p>
+    <button onclick="loop2()">display</button>
+    <p>c. Print the numbers 40-10 in descending order, but only if the number are multiples of 3</p>
+    <button onclick="loop3()">display</button>
+</body>
+</html>
